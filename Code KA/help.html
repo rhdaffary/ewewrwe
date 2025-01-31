@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIBILANG</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #E3F8FF;
+            display: flex;
+        }
+
+        header {
+            background-color: #C8EFFF;
+            padding: 5px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .hamburger {
+            font-size: 24px;
+            color: #333;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 60px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        .content {
+            margin-left: 80px;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #C8EFFF;
+            width: 60px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 400px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 5;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        
+
+        .sidebar a {
+            margin: 10px 0;
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+        }
+
+        .sidebar a:hover {
+            color: #007BFF;
+        }
+
+        .container {
+            padding: 100px 20px;
+            text-align: center;
+        }
+    
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:50px;
+        }
+    
+        .search-bar input {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+        }
+    
+        .search-bar i {
+            margin-left: -30px;
+            color: gray;
+            cursor: pointer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+    
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 16px;
+            font-weight: normal;
+            border: 2px solid black;
+        }
+    
+        .full-width {
+            grid-column: span 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="homepage.html"><i class='fa fa-home'></i></a>
+        <a href="help.html"><i class='fa fa-question-circle-o'></i></a>
+        <a href="mail.html"><i class='fa fa-envelope-o'></i></a>
+    </div>
+    <div class="content">
+        <header>
+            <div class="logo-section">
+                <i class="fa fa-bars hamburger"></i>
+                <img class="logo" src="logo.png" alt="Logo">
+                <h1>SIBILANG</h1>
+            </div>
+            <nav>
+                <a href="#">Help Center</a>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="search-bar">
+            <i class='fa fa-search'></i>
+            <input type="text" placeholder="Search">
+            <i class="fa fa-microphone"></i>
+        </div>
+        <div class="grid-container">
+            <div class="card"><strong>Tentang SIBI</strong><br>Temukan informasi lebih lanjut dari SIBI</div>
+            <div class="card"><strong>Dukungan teknis</strong><br>Solusi untuk masalah umum dan kompatibilitas perangkat.</div>
+            <div class="card"><strong>Cara Menggunakan</strong><br>Langkah-langkah menggunakan layanan penerjemah.</div>
+            <div class="card half-width"><strong>Layanan Pengguna</strong><br>Kontak untuk bantuan langsung (email, live chat, atau nomor telepon).</div>
+            <div class="card half-width"><strong>Kebijakan dan Etika Layanan</strong><br>Kebijakan penggunaan layanan, termasuk batasan konten yang dapat diterjemahkan.</div>
+        </div>
+    </div>
+</body>
+</html>
